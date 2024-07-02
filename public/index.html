@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinomon</title>
+    <link rel="stylesheet" href="./style.css">
+    
+ </head>
+<body>
+    
+      
+    <section id="selecion-dino"> 
+          <h1  class="titulo">  DINOMON </h1>
+
+            <h2 class="subtitulo"> elige a tu dinomon: </h2>
+
+            <div id="contenedorTargetas" class="targetas">  
+           
+
+
+            </div>
+       
+        <button class="selec" id="botonDino" >seleccionar</button>
+    </section>
+
+    <section id="verMapa">
+        <h2  class="subtitulo">  recorre el mapa con tu Dino </h2>
+        <canvas id="mapa">   </canvas>
+        <button ontouchend="detenerMovimiento()" onmouseup="detenerMovimiento()" ontouchstart="MoverArriba()" onmousedown="MoverArriba()">arriba</button>
+        <div style="
+        display: flex;">
+            <button ontouchend="detenerMovimiento()" onmouseup="detenerMovimiento()" ontouchstart="MoverIzquierda()" onmousedown="MoverIzquierda()">izquierda</button>
+            <button ontouchend="detenerMovimiento()" onmouseup="detenerMovimiento()" ontouchstart="MoverAbajo()" onmousedown="MoverAbajo()">abajo</button>
+            <button ontouchend="detenerMovimiento()" onmouseup="detenerMovimiento()" ontouchstart="MoverDerecha()" onmousedown="MoverDerecha()">derecha</button>
+        </div>
+    </section>
+    <section id="seleccion-ataque"> 
+         <h1  class="titulo">  DINOMON </h1>
+
+          <h2 class="subtitulo">elige tu ataque: </h2>
+
+         <div id="contenedorAtaques" class="targetasAtaques">
+
+           
+         </div>
+
+           <div id="mensajes">
+            <p id="resultado"> buena suerte 😺</p>
+
+            <section id="reiniciar"> <button id="botonReiniciarJ"> reiniciar</button></section>
+           </div>
+           
+            
+
+
+         
+        
+         <div class="contenedorInfoG" style="
+         display: grid;
+         grid-template-columns: 100px 101px; ">
+
+            <div class="infoJugador">
+                <p id="vidasPlayer">0</p>
+                <p id="dinoPlayer"> </p>
+                <div id="ataqueDelJugador"></div>
+                
+            </div>
+            <div class="infoEnemigo">
+                <p id="vidasEnemigo">0</p>
+                <p id="dinoRival"></p>
+                <div id="ataqueDelEnemigo"></div>
+                
+            </div>  
+         </div>
+    </section>
+    <script src="./js/dinomon.js"></script>
+</body>
+</html>

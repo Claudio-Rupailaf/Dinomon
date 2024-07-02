@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Fruktur:ital@0;1&display=swap');
+
+body{
+    font-family: "Fruktur", system-ui;
+    background-color: #114232;
+}
+
+.titulo{
+    color: white;
+    font-size: 32px;
+   
+    
+    
+}
+.subtitulo{
+    color: white;
+    font-size: 22px;
+
+}
+#selecion-dino{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.targetas, .targetasAtaques{
+    display: flex;
+    gap: 10px;
+    
+
+ }
+.targetaDinomon{
+    width: 187px;
+    height: 145px;
+    background: #87A922;
+    box-sizing: border-box;
+    margin: 10px;
+    border-radius: 20px;
+    display: flex;
+    color: white;
+    text-shadow: 
+        1px 1px 0 #114232, 
+        -1px -1px 0 #114232, 
+        -1px 1px 0 #114232, 
+        1px -1px 0 #114232,
+        1px 0 0 #114232, 
+        -1px 0 0 #114232, 
+        0 1px 0 #114232, 
+        0 -1px 0 #114232;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.targetaDinomon img{
+
+    width: 100px;
+    height: 80px;
+}
+
+#botonDino{
+    width: 130px;
+    border-radius: 20px;
+    background: transparent;
+    border: 1px solid white;
+    height: 43px;
+    color: white;
+    text-shadow: 
+    1px 1px 0 #114232, 
+    -1px -1px 0 #114232, 
+    -1px 1px 0 #114232, 
+    1px -1px 0 #114232,
+    1px 0 0 #114232, 
+    -1px 0 0 #114232, 
+    0 1px 0 #114232, 
+    0 -1px 0 #114232;
+    font-family: "Fruktur", system-ui;
+}
+
+
+input{
+    display: none;
+}
+
+input:checked + label{
+ background-color: #F7F6BB;
+}
+
+.selec{
+    width: 90px;
+    height: 36px;
+    background: rgb(7, 99, 227);
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border: 1px solid rgb(255, 242, 0);
+}
+#seleccion-ataque{
+   
+    flex-direction: column;
+    align-items: center;
+}
+.botonAtaque{
+    background-color: #87A922;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border-color: transparent;
+    width: 80px;
+    margin: 5px;
+    color: white;
+    text-shadow: 
+    1px 1px 0 #114232, 
+    -1px -1px 0 #114232, 
+    -1px 1px 0 #114232, 
+    1px -1px 0 #114232,
+    1px 0 0 #114232, 
+    -1px 0 0 #114232, 
+    0 1px 0 #114232, 
+    0 -1px 0 #114232;
+    font-family: "Fruktur", system-ui;
+}
+#mensajes{
+    width: 200px;
+    background: #87A922;
+    color: white;
+    text-shadow: 
+    1px 1px 0 #114232, 
+    -1px -1px 0 #114232, 
+    -1px 1px 0 #114232, 
+    1px -1px 0 #114232,
+    1px 0 0 #114232, 
+    -1px 0 0 #114232, 
+    0 1px 0 #114232, 
+    0 -1px 0 #114232;
+    padding: 10px;
+    margin-top: 16px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Fruktur", system-ui;
+}
+#botonReiniciarJ{
+    border: transparent;
+    border-radius: 20px;
+    color: #114232;
+    font-family: "Fruktur", system-ui;
+}
+
+.contenedorInfoG{
+
+    display: grid; 
+    grid-template-columns: 100px 100px;
+}
+
+#vidasPlayer, #vidasEnemigo{
+    font-size: 32px;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+.infoJugador, .infoEnemigo{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#verMapa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#verMapa button{
+
+    user-select: none;
+    width: 130px;
+    border-radius: 20px;
+    margin: 10px 0;
+    background: transparent;
+    border: 1px solid white;
+    height: 43px;
+    color: white;
+    text-shadow: 
+    1px 1px 0 #114232, 
+    -1px -1px 0 #114232, 
+    -1px 1px 0 #114232, 
+    1px -1px 0 #114232,
+    1px 0 0 #114232, 
+    -1px 0 0 #114232, 
+    0 1px 0 #114232, 
+    0 -1px 0 #114232;
+    font-family: "Fruktur", system-ui;
+
+}
+
+
+@media (max-width: 560px) {
+    .targetas, .targetasAtaques{
+        flex-direction: column;
+    }
+}
+@media (max-width: 360px) {
+    #verMapa div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
